@@ -18,6 +18,22 @@ def home():
 def about():
     return render_template('about.html', title='About')
 
+
+@app.route('/FAQ')
+def FAQ():
+    return render_template('FAQ.html', title='FAQ')
+
+
+@app.route('/uni_services')
+def uni_services():
+    return render_template('uni_services.html', title='Uni Services')
+
+@app.route('/study_essentials')
+def study_essentials():
+    return render_template('study_essentials.html', title='Study Essentials')
+
+
+
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     if current_user.is_authenticated:
