@@ -1,5 +1,5 @@
 body {
-  background: #E0E2D1;
+  background: rgb(202, 202, 202);
   color: #333333;
   margin-top: 5rem;
 }
@@ -8,16 +8,34 @@ h1, h2, h3, h4, h5, h6 {
   color: #444444;
 }
 
+
+.zoom {
+    padding: 10px;
+    transition: transform .5s; /* Animation */
+    margin: 0 auto;
+}
+
+.zoom:hover{
+  transform: scale(2);
+}
+
 .bg-steel {
-  background-color: #1b3142;
+  background-color: #1090d5;
 }
 
 .site-header .navbar-nav .nav-link {
-  color: #cbd5db;
+  color: #000000;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 18px;
+
 }
 
 .site-header .navbar-nav .nav-link:hover {
   color: #ffffff;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 18px;
+  background-color: #2d3138;
+
 }
 
 .site-header .navbar-nav .nav-link.active {
