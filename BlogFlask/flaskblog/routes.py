@@ -103,6 +103,7 @@ def account():
 
 @app.route('/post/new', methods=['GET', 'POST'])
 @login_required
+#NEED TO CHANGE THIS FROM POST TO QUESTION
 def new_post():
     form = PostForm()
     if form.validate_on_submit():
@@ -111,13 +112,13 @@ def new_post():
         db.session.commit()
         flash('Your post has been created!','success')
         return redirect(url_for('home'))
-    return render_template('create_post.html', title = 'New Post', form=form, legend='New Post')
+    return render_template('create_question.html', title = 'Ask A Question', form=form, legend='Ask A Question')
 
 
 @app.route('/post/<int:post_id>')
 def post(post_id):
     post = Post.query.get_or_404(post_id)
-    return render_template('post.html', title=post.title, post=post)
+    return render_template('question.html', title=post.title, post=post)
 
 
 
