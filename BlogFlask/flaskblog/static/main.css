@@ -1,6 +1,6 @@
 body {
-  background-image: url("../static/profile_pics/demo-background.png");
-  background: url("../static/profile_pics/demo-background.png");
+  background-image: url("../static/profile_pics/background-image.png");
+  background: url("../static/profile_pics/background-image.png");
   background-repeat: repeat;
   background-color: #CACACA; 
   color: #333333;
